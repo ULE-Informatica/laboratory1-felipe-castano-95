@@ -24,8 +24,8 @@ Original position | Position after comments and changes | Error/Rule/Recommendat
     1. Adapt the process for using different compilation tools and parameters (gcc vs g++), -Wall, standards (-std=c99 and -std=c11) 
 
     The source code was compiled with standards 99 and 11, following the commands below:
-    	* gcc -std=c99 -Wall -g3 -o exampleStringsc99 exampleStrings.c  2> logsc99.txt
-    	* gcc -std=c11 -Wall -g3 -o exampleStringsc11 exampleStrings.c  2> logsc11.txt
+    * gcc -std=c99 -Wall -g3 -o exampleStringsc99 exampleStrings.c  2> logsc99.txt
+    * gcc -std=c11 -Wall -g3 -o exampleStringsc11 exampleStrings.c  2> logsc11.txt
 
     2. Compare between different two standards 
 
