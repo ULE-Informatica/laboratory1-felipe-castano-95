@@ -23,15 +23,19 @@ Original position | Position after comments and changes | Error/Rule/Recommendat
 
     1. Adapt the process for using different compilation tools and parameters (gcc vs g++), -Wall, standards (-std=c99 and -std=c11) 
 
-    The source code was compiled with standards 99 and 11, following the commands below:
-    * gcc -std=c99 -Wall -g3 -o exampleStringsc99 exampleStrings.c  2> logsc99.txt
-    * gcc -std=c11 -Wall -g3 -o exampleStringsc11 exampleStrings.c  2> logsc11.txt
+    	The source code was compiled with standards 99 and 11, following the commands below:
+	    * gcc -std=c99 -Wall -g3 -o exampleStringsc99 exampleStrings.c  2> logsc99.txt
+	    * gcc -std=c11 -Wall -g3 -o exampleStringsc11 exampleStrings.c  2> logsc11.txt
+
+	    Note: the initial and final version of the logs in txt format is added for each standard tested
+
+
 
     2. Compare between different two standards 
 
-    All insecure  funcitons where deprecated with the C11 standard.
+	    All insecure  funcitons where deprecated with the C11 standard.
 
-    For example, for lines 92 - 97 using the strcpy_s and strcat_s functions, it is not necessary to add the null-terminated byte. however, GCC does not include the entire standard and therefore it was not possible to add these functions
+	    For example, for lines 92 - 97 using the strcpy_s and strcat_s functions, it is not necessary to add the null-terminated byte. however, GCC does not include the entire standard and therefore it was not possible to add these functions.
 
 
 
