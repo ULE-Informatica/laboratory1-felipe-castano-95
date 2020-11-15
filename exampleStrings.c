@@ -87,7 +87,7 @@ int main(int argc, char *argv[])
     }
 
     /*
-    * Changed deprecated function and adding Null-terminated byte
+    * Changed deprecated function and adding null-terminated byte
     */
     strncpy(key, argv[1], sizeof(key));  
     key[sizeof(key)-1]='\0';
